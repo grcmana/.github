@@ -1,57 +1,56 @@
-![GRCMana GitHub Banner](/profile/assets/GRCMana%20GitHub%20Banner.png)
+![GRCMANA](/profile/assets/grcmana_banner.png)
 
-# Welcome to GRCMana | Where GRC Minds Meet
+# Trust is market access. Engineer it to hold.
 
-## 👋 Hi, I'm Harry and Welcome To GRCMana
-Over the course of nearly two decades, I have helped technologists, security professionals and business leaders from all walks of life reduce cost, improve security and drive business success by unlocking the power of GRC.
+I'm Harry West, Trust Architect: twenty years in cybersecurity, including Global CISO roles. GRCMANA is where I teach GRC Engineering. That means building security and governance that run all year and leave their own evidence, so you can prove trust whenever a buyer, auditor or regulator asks, not just in audit week.
 
-## Here's What I've Learnt
+This is where that engineering lives as code. Everything here is free, open source and yours to fork.
 
-> The world of Governance, Risk, and Compliance is shifting faster than ever.
+## Why this exists
 
-1. **The rules keep changing - and fast** - New frameworks. New threats. New expectations. GRC isn’t static anymore — and knowing what “good” looks like is harder than ever.
-2. **Manual processes can't keep up** - As risks evolve and business moves faster, legacy tools and spreadsheets are slowing you down. Staying compliant shouldn’t feel like a full-time fire drill.
-3. **You're expected to lead - without support** - GRC roles are expanding. But training, mentorship, and peer insight haven’t caught up. Too often, you’re left to figure it out alone.
+A customer's security questionnaire asks for evidence of your last access review. The review happened. The proof is in someone's inbox, or nowhere.
 
-## Sound familiar? Here's three ways I can help
+Enterprise buyers don't read your policies. They sample whether your controls ran, who owned them and what evidence they left.
 
-| GRC Knowledge Hubs    | The GRCMana Newsletter    | The GRCMana Hub       |
-| :---:                   | :---:                        | :---:                    |
-| You're ultimate GRC knowledgebase. Access expert guides backed by 20+ years experience that cut through the noise and give you practical steps forward.                      | Stay grounded, informed and one step ahead. From security to AI, frameworks to career tips. GRCMana gives you clarity in a world full of noise.                          | You're not alone on your GRC journey. The GRCMana Hub is your launchpad into the world of modern GRC. It's free. It's practical. It's where GRC minds meet.                       |
-|[Access the GRC Knowledge Hubs](https://www.grcmana.io/learn/grc)                       | [Join the GRCMana Newsletter](https://pages.grcmana.io/join-grcmana-hub)                           | [Join the GRCMana Newsletter](https://pages.grcmana.io/join-grcmana-hub)                      |
+An evidence trail built by hand decays between audits. One that's engineered holds.
 
-## About This GitHub Account
-Over the years I have created and curated a long list of tools, utilities, scripts, tech and resources that help me on my mission as a GRC professional.
+The repos below put an AI agent on the repetitive parts of that work. It works against your own risk register, evidence and approvals, and a named human stays accountable for every decision.
 
-I've bundled them into a growing collection of repositories for you to access in the hope that it helps you take another step forward on your journey.
+## Start here
 
-Hope it helps 😃
+| | What it is | Get it |
+| :-- | :-- | :-- |
+| **[GRC Skills](https://github.com/grcmana/grcskills)** | Agent skills for company context, risk, policies, evidence, audit readiness, AI impact assessments and DPIAs. Covers ISO 27001, SOC 2, Cyber Essentials, UK and EU GDPR and ISO 42001. Works in Claude Code, Codex, Cursor and any agent that supports Agent Skills. | `npx skills add grcmana/grcskills`<br>[grcskills.io](https://grcskills.io) |
+| **[GRC OS](https://github.com/grcmana/grc-os)** | A ready-to-run Claude Code workspace. It bundles every skill with operating instructions, guardrails, a private `grc/` workspace, run logs and a worked example company. | `git clone https://github.com/grcmana/grc-os` |
+| **[SkillBOM](https://github.com/grcmana/skillbom)** | A bill of materials for the skills your agents run. It records what's in each skill, what knowledge it was built from and its exact content hash, as a signed CycloneDX file. Check an installed copy against it to see whether anything has changed. Works with any Agent Skills repo, not only GRC Skills. | `pip install "git+https://github.com/grcmana/skillbom@v0.0.1"`<br>[skillbom.io](https://skillbom.io) |
 
-> [!IMPORTANT] 
->
-> ### Can't find what you're looking for?
->
-> [Connect with me on LinkedIn](https://www.linkedin.com/in/harrywest/) and shoot me a DM. I'll do what I can to help.
->
+**Just been told a customer needs ISO 27001, SOC 2 or Cyber Essentials?** Start with GRC OS. Work through the example company first, then point it at your own.
 
-## Useful Links
+**Already running a programme?** Install GRC Skills into the project you already work in.
 
-- [GRCMana Blog](https://www.grcmana.io/blog)
-- [GRC Knowledge Hub](https://www.grcmana.io/learn/grc) from GRCMana
-- [ISO 27001 Knowledge Hub](https://www.grcmana.io/learn/iso-27001) from GRCMana
-- [SOC 2 Knowledge Hub](https://www.grcmana.io/learn/soc-2) from GRCMana
-- [GRC Framework Glossary](https://www.grcmana.io/resources/framework-glossary) from  GRCMana
+## How they're built
 
-### Social Media
+- **Everything is a file.** Markdown and CSV in a `grc/` folder you control, git-ignored by default. No platform, no lock-in.
+- **A human signs off.** The skills never fill in approval fields and never tell you you're "compliant" or "certified".
+- **Every AI run is logged.** Each run writes a record of what the agent did, so your use of AI is auditable too.
+- **Version-aware knowledge, in my own words.** Clause and control IDs with an `as_of` date. No copyrighted standard text.
+- **Drafts, not opinions.** Outputs are for review by a competent person. They aren't audit opinions or legal advice.
 
-Twitter: <https://x.com/grcmana>
+These are early releases.
 
-Facebook: <https://www.facebook.com/profile.php?id=61576870619392>
+I haven't yet published measured results for them. When I do, they'll go out with each release, failures included.
 
-LinkedIn: <https://www.linkedin.com/company/grcmana>
+## Go further
 
-Instagram: <https://www.instagram.com/grc_mana/>
+| GRC Pulse | The GRC Collective |
+| :--- | :--- |
+| A weekly newsletter on GRC Engineering, the framework changes that matter, and what buyers actually check. | A free community for practitioners making trust hold all year. Ask questions, compare approaches and learn GRC Engineering alongside people doing the same job. |
+| [Subscribe to GRC Pulse →](https://grcpulse.io) | [Join The GRC Collective →](https://www.skool.com/the-grc-hub-by-grcmana-9174/about) |
 
-YouTube: <https://www.youtube.com/@grcmana>
+## Contribute or report a problem
 
-Medium: <https://medium.com/grcmana>
+Each repo has issue forms, and pull requests are welcome. Framework corrections matter most: if a clause reference or requirement looks wrong, raise it in [GRC Skills](https://github.com/grcmana/grcskills/issues/new/choose). Found a security issue? Use private vulnerability reporting on the affected repo, as described in its `SECURITY.md`.
+
+## Elsewhere
+
+[grcmana.com](https://grcmana.com) · [LinkedIn](https://www.linkedin.com/in/harrywest/) · [YouTube](https://www.youtube.com/@grcmana)
